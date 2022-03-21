@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages{
+        stage("connect Jenkins")
+        {
+            steps
+            {
+                rtServer (
+                    id: 'gayatridwankhade@gmail.com',
+                    url: 'https://gayatriwankhade.jfrog.io/artifactory',
+                    // If you're using username and password:
+                    username: 'gayatridwankhade@gmail.com',
+                    password: 'Gayatri@123',
+                    )
+
+            }
+            
+        }
+    }
+}
