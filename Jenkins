@@ -16,5 +16,19 @@ pipeline {
             }
             
         }
+        stage("upload file")
+        {
+            steps{
+                rtUpload (
+                        serverId: 'Artifactory-1',
+                        spec: '''{
+                            "files": [
+                                {
+                                "pattern": "C:\Users\User\Desktop\145989_Gayatri_Wankhade",
+                                "target": "https://gayatriwankhade.jfrog.io/artifactory/default-docker-virtual/"
+                                }
+                                ]
+                                }''',
+          )
     }
 }
