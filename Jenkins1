@@ -6,7 +6,7 @@ pipeline {
             steps
             {
                 rtServer (
-                    id: 'Artifactory-1',
+                    id: 'gayatriwankhade',
                     url: 'https://gayatriwankhade.jfrog.io/artifactory',
                     // If you're using username and password:
                     username: 'gayatridwankhade@gmail.com',
@@ -19,7 +19,7 @@ pipeline {
         {
             steps{
                 rtUpload (
-                        serverId: 'Artifactory-1',
+                        serverId: 'gayatriwankhade',
                         spec: '''{
                             "files": [
                                 {
