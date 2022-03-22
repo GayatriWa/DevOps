@@ -23,7 +23,7 @@ pipeline {
                         spec: '''{
                             "files": [
                                 {
-                                "pattern": r"C://Users//User//Desktop//145989_Gayatri_Wankhade.zip",
+                                "pattern": "C://Users//User//Desktop//145989_Gayatri_Wankhade.zip",
                                 "target": "https://gayatriwankhade.jfrog.io/artifactory/firstrepository-generic-local/145989_Gayatri_Wankhade.zip/"
                                 }
                                 ]
