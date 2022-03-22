@@ -7,7 +7,7 @@ pipeline {
             {
                 rtServer (
                     id: 'gayatriwankhade',
-                    url: 'https://gayatriwankhade.jfrog.io',
+                    url: 'https://gayatriwankhade.jfrog.io/artifactory',
                     // If you're using username and password:
                     username: 'gayatridwankhade@gmail.com',
                     password: 'Gayatri@123',
@@ -24,7 +24,7 @@ pipeline {
                             "files": [
                                 {
                                 "pattern": "C://Users//User//Desktop//145989_Gayatri_Wankhade.zip",
-                                "target": "https://gayatriwankhade.jfrog.io/artifactory/firstrepository-generic-local/"
+                                "target": "firstrepository-generic-local/"
                                 }
                                 ]
                                 }'''
