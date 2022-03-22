@@ -27,7 +27,7 @@ pipeline {
                                 "target": "https://gayatriwankhade.jfrog.io/artifactory/firstrepository-generic-local/"
                                 }
                                 ]
-                                }''',
+                                }'''
           )
           }
     }
