@@ -24,7 +24,7 @@ pipeline {
                             "files": [
                                 {
                                 "pattern": "C://Users//User//Desktop//145989_Gayatri_Wankhade.zip",
-                                "target": "https://gayatriwankhade.jfrog.io/artifactory/firstrepository-generic-local/"
+                                "target": "https://gayatriwankhade.jfrog.io/artifactory/"
                                 }
                                 ]
                                 }'''
