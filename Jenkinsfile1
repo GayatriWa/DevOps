@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                echo 'kafkaproducer.py'
+                bat 'kafkaproducer.py'
             }
         }
     }
