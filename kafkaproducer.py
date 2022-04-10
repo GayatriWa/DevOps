@@ -8,6 +8,7 @@ ack = producer.send(topicName, b'Hello World!!!!!!!!')
 metadata = ack.get()
 print(metadata.topic)
 print(metadata.partition)
+print(metadata.buildnumber)
 
 print(os.environ['JOB_NAME'])
 print(os.environ['BUILD_NUMBER'])
