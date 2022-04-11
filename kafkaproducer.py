@@ -8,10 +8,5 @@ ack = producer.send(topicName, b'Hello World!!!!!!!!',b'JOB_NAME')
 metadata = ack.get()
 print(metadata.topic)
 print(metadata.partition)
-my_job = jenkins_server.get_job('job_name')
-last_build = my_job.get_last_buildnumber()
-print(last_build)
-
-
 print(METADATA.JOB_NAME)
 
