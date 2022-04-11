@@ -8,5 +8,5 @@ ack = producer.send(topicName, b'Hello World!!!!!!!!',b'JOB_NAME')
 metadata = ack.get()
 print(metadata.topic)
 print(metadata.partition)
-print(METADATA.JOB_NAME)
+print(metadata.JOB_NAME)
 
