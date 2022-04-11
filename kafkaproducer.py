@@ -4,14 +4,14 @@ bootstrap_servers = ['localhost:9092']
 topicName = 'myTopic'
 producer = KafkaProducer(bootstrap_servers = bootstrap_servers)
 producer = KafkaProducer()
-ack = producer.send(topicName, b'Hello World!!!!!!!!')
+ack = producer.send(topicName, b'Hello World!!!!!!!!',b'JOB_NAME')
 metadata = ack.get()
 print(metadata.topic)
 print(metadata.partition)
-print(metadata.buildnumber)
+my_job = jenkins_server.get_job('job_name')
+last_build = my_job.get_last_buildnumber()
+print(last_build)
 
-print(os.environ['JOB_NAME'])
-print(os.environ['BUILD_NUMBER'])
-print(os.environ['BUILD_URL'])
-print(os.environ['BUILD_TAG'])
-print(os.environ['BUILD_ID'])
+
+print(METADATA.JOB_NAME)
+
